@@ -19,6 +19,6 @@ app.get("/earth", function(req, res){
     res.render("earth.html");
 });
 
-app.listen("8081", "127.0.0.1", function(){
+app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Express Server is Running...");
 });
